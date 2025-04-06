@@ -1,0 +1,418 @@
+
+/*------------styling headers and menu--------------*/
+
+
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing:border-box;
+}
+
+body{
+   background-color: #fff ;
+   font-family: 'Montserrat', sans-serif;
+   list-style: none;
+}
+.nav-bar li,a {
+list-style: none;
+display: inline;
+text-decoration: none;
+}
+#logo{
+float: left;
+width: 70px;
+height: 50px; 
+}
+.mobile-logo{
+   display: none;
+}
+.menu-items{
+   height: 60px;
+   width: 100%;
+   background-color: #57b4a9;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   margin-bottom: 50px;
+}
+.menu-items ul{ 
+   align-items: center;
+   display: inline;
+   position: absolute;
+   right: 30px;
+  
+}
+
+.drop-menu{
+height:150vh;
+position: absolute;
+background-color: #002659;
+top:-20px;
+right:-60px;
+width:100%;
+box-shadow: 5px 0 5px rgba(128, 128, 128, 0.589);
+transition: all 3s;
+display: none;
+}
+.drop-menu li{
+display: block;
+padding: 10px 5px;
+}
+
+.menu-items  a {
+   color:#002659;
+   width: 100%;
+   font-size: 15px;
+   font-style:italic;
+   font-weight: 600;
+   transition: .5s ease;
+   padding-left: 30px;
+}
+
+.ham-bar{
+ display: none;
+}
+.active{
+   display: block;
+   z-index: 3;
+}
+.close{
+   position: relative;
+   left: 80%;
+   top:2%;
+   font-size: 20px;
+}
+.mobile-menu{
+   display: none;
+}
+a:hover{
+   color:white;
+}
+a:focus {
+   width: 100px;
+   height: 30px;
+   color:white;
+   font-size: 1em;
+   font-family: 'Montserrat', sans-serif;
+   transform:scale(1.1)
+}
+ 
+footer {
+bottom: 0px;
+width: 100%;
+height:10%;
+background-color:#57b4a9;
+font-family: 'Montserrat', sans-serif;
+}
+.social-media{
+  display: flex;
+   color:#002659;
+   font-size:17px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-style: italic;
+
+}
+.social-media a{
+   color:#002659;
+   padding: 10px;
+} 
+.search{
+width: 100%;
+min-height: 20px;
+display: inline-block;
+margin:15px;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.search input{
+   width: 30%;
+   min-height: 20px;
+   margin-left:20%;
+   outline: none;
+   }
+   .search input:focus{
+      width: 25%;
+      min-height: 20px;
+      margin-left:20%;
+      transform: scale(1.1);
+      margin-right: 30px;
+      border: none;
+      box-shadow: 0 5px 25px  rgba(87, 180, 169, 0.733)
+      }
+/* ------------- complaint insert sittings --------*/
+
+ .customer input,
+ .complaint input {
+    width: 500px;
+    height: 40px;
+    padding: 15px;
+    margin: 10px;
+    outline: none;
+    font-size: 1;
+    text-align: center;
+    color:#002659;
+    border-radius: 15px ;
+    font-weight: 700;
+    transition: .5s ease ;
+    margin-left: 50px;
+    background-color: #f3f3f3 ;
+    border: none;
+    box-shadow: 3px 0 5px  rgba(2, 37, 37, 0.644);
+}
+.btns-area{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input:focus {
+border-color: #57b4a9;
+}
+
+ button {
+    width: 90px;
+    height: 30px;
+    background-color: #57b4a9;
+    color: #002659;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1em;
+    text-align: center;
+    border:none;
+    border-radius: 15px ;
+    transition: .5s ease;
+    font-style: italic;
+ }
+ button:hover{
+    background-color: #5be9d8d3;
+    border-radius:15px;
+    border:none;
+    color: white;
+    transform: scale(1.1);
+    
+ }
+
+ .customer{
+
+   margin: auto;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   display: flex;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 15px 15px 15px 15px;
+   justify-content: center;
+    color: #002659;
+    box-shadow: 3px 0px 8px  #3a3a3abb;
+    transition: .5s ease;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+ }
+ label{
+   width: 150px;
+   display: block;
+ }
+ .form-header{
+   width: 100%;
+  text-align: center;
+  height: 50px;
+
+ }
+
+.complaint{
+width:90%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+font-style: italic;
+font-weight: 500;
+justify-content: center;
+border-radius: 15px ;
+color: #002659;
+box-shadow: 3px 0px 8px  #3a3a3abb;
+transition: .5s ease;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.feild{
+   position: relative;}
+.feild i {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left:15%;
+}
+
+/* -------------------------- survey sittngs--------- */
+
+.social-media a:hover {
+   transform: scale(1.1);
+}
+
+.survey-input{
+width: 15px;
+height: 15px;
+margin: -20px;
+margin-top: 3px;
+border-radius: 50%;
+}
+.survey-area{
+   display: flex;
+   flex-wrap: wrap;
+   color: white;
+   justify-content: center;
+}
+.survey-box {
+min-height: 150px;
+width:500PX;
+margin: 20px;
+border-radius: 5px;
+background-color:#57b4a9;
+box-shadow: 2px 3px 5px rgb(78, 78, 78);
+position: relative;
+text-align: center;
+padding: 20px;
+cursor: pointer;
+}
+.animation-bar{
+   opacity: .6;
+}
+.survey-text ,.servey-label{
+   font-size: 1em;
+   font-weight: bold;
+   cursor: pointer;
+}
+.survey-box textarea {
+   width: 400px;
+   height: 90px;
+   resize: none;
+}
+.emoje-box{
+  position: absolute;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  transform:translateX(-50%);
+  border-radius: 50%;
+  top: 45%;
+overflow: hidden;
+
+}
+.fa-regular{
+   font-size:35px;
+}
+.survey-rate{
+   position: absolute;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+   cursor: pointer;
+
+}
+.redio-eara{
+   display: flex;
+   position: absolute;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.fa-star{
+   color: #d2cac7;
+   font-size: 30px;
+}
+.fa-star.active{
+color:gold;
+}
+.survey-footer{
+  position: absolute; 
+  bottom: 2px;
+}
+.btn-area{
+   width: 100%;
+}
+
+
+/*-------------------- CRM sitting ----------------------*/
+
+
+
+
+/* --------------mobile sittings ----------------------------*/
+
+@media only screen and (max-width:768px){
+.search input{
+width: 30%;
+min-height: 20px;
+margin-left:5%;
+}
+.customer input,
+.complaint input{
+   width: 300px;
+}
+.search input:focus{
+width: 25%;
+min-height: 20px;
+margin-left:5%;
+transform: scale(1.1);
+border: none;
+box-shadow: 0 5px 25px  rgba(87, 180, 169, 0.733)}
+ 
+.menu-items{display: none;}
+.mobile-logo{
+   display: block;
+width: 150px;
+height: 70px;
+}
+.ham-bar{
+   display: flex;
+   position: absolute;
+   top: 5%;
+   right: 7%;
+}
+.mobile-menu{
+   display:none;
+   position: fixed;
+   right:0;
+   top:0;
+   width:100%;
+   height: 100vh;
+   background-color:#fff;
+   box-shadow:0 8px 8px darkgray;
+   transition: all 1s;
+}
+.mobile-menu li{
+font-size:16px;
+font-weight: bold;
+padding: 5px 0px;
+   display: block;
+   margin-top: 20px;
+   padding-left: 15%;
+}
+.mobile-menu a{
+   color: #002659;
+}
+.active{
+   display: block;
+   z-index: 3;
+}
+.close{
+   position: relative;
+   left: 90%;
+   top:5%;
+   font-size: 20px;
+}
+}
+
+
